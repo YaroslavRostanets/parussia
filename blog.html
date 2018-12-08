@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <title>GoodPress &#8211; Magazine WordPress Theme</title>
+    <link rel='dns-prefetch' href='//s.w.org' />
+    <link rel="alternate" type="application/rss+xml" title="GoodPress &raquo; Feed" href="https://www.happythemes.com/demo/goodpress/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="GoodPress &raquo; Comments Feed" href="https://www.happythemes.com/demo/goodpress/comments/feed/" />
+    <!-- This site uses the Google Analytics by MonsterInsights plugin v6.2.6 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='contact-form-7-css'  href='css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='goodpress-style-css'  href='styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='genericons-style-css'  href='css/genericons.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='responsive-style-css'  href='css/responsive.css' type='text/css' media='all' />
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/www.happythemes.com\/demo\/goodpress","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/jquery-migrate.min.js'></script>
+
+    <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+
+    <style type="text/css" media="all">
+        body,
+        .breadcrumbs h3,
+        .section-header h3,
+        label,
+        input,
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="search"],
+        input[type="password"],
+        textarea,
+        button,
+        .btn,
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        table,
+        .sidebar .widget_ad .widget-title,
+        .site-footer .widget_ad .widget-title {
+            font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        h1,h2,h3,h4,h5,h6,
+        .navigation a {
+            font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        #primary-menu li a,
+        #secondary-menu li a,
+        .content-block .section-heading h3,
+        .sidebar .widget .widget-title,
+        .site-footer .widget .widget-title,
+        .carousel-content .section-heading,
+        .breadcrumbs h3,
+        .page-title,
+        .entry-category,
+        #site-bottom,
+        .ajax-loader,
+        .entry-summary span a,
+        .pagination .page-numbers,
+        .navigation span,
+        button,
+        .btn,
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        a,
+        a:visited,
+        .sf-menu ul li li a:hover,
+        .sf-menu li.sfHover li a:hover,
+        #primary-menu li li a:hover,
+        #primary-menu li li.current-menu-item a:hover,
+        #secondary-menu li li a:hover,
+        .entry-meta a,
+        .edit-link a,
+        .comment-reply-title small a:hover,
+        .entry-content a,
+        .entry-content a:visited,
+        .page-content a,
+        .page-content a:visited,
+        .pagination .page-numbers.current,
+        a:hover,
+        .site-title a:hover,
+        .mobile-menu ul li a:hover,
+        .pagination .page-numbers:hover,
+        .sidebar .widget a:hover,
+        .site-footer .widget a:hover,
+        .sidebar .widget ul li a:hover,
+        .site-footer .widget ul li a:hover,
+        .entry-related .hentry .entry-title a:hover,
+        .author-box .author-name span a:hover,
+        .entry-tags .tag-links a:hover:before,
+        .entry-title a:hover,
+        .page-content ul li:before,
+        .entry-content ul li:before,
+        .content-loop .entry-summary span a:hover,
+        .single .navigation a:hover {
+            color: #cc0000;
+        }
+        .mobile-menu-icon .menu-icon-close,
+        .mobile-menu-icon .menu-icon-open,
+        .widget_newsletter form input[type="submit"],
+        .widget_newsletter form input[type="button"],
+        .widget_newsletter form button,
+        .more-button a,
+        .more-button a:hover,
+        .entry-header .entry-category-icon a,
+        button,
+        .btn,
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"],
+        button:hover,
+        .btn:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        input[type="button"]:hover,
+        .content-loop .entry-header .entry-category-icon a,
+        .entry-tags .tag-links a:hover,
+        .widget_tag_cloud .tagcloud a:hover,
+        #featured-content .hentry:hover .entry-category a,
+        .content-block .section-heading h3 a,
+        .content-block .section-heading h3 a:hover,
+        .content-block .section-heading h3 span,
+        .carousel-content .section-heading,
+        .breadcrumbs .breadcrumbs-nav a:hover,
+        .breadcrumbs .breadcrumbs-nav a:hover:after {
+            background-color: #cc0000;
+        }
+        .entry-tags .tag-links a:hover:after,
+        .widget_tag_cloud .tagcloud a:hover:after {
+            border-left-color: #cc0000;
+        }
+
+    </style>
+</head>
+
+<body class="archive category category-business category-2 hfeed">
+
+
+<div id="page" class="site">
+
+    <header id="masthead" class="site-header clear">
+
+        <div id="primary-bar">
+
+            <div class="container">
+
+                <nav id="primary-nav" class="main-navigation">
+
+                    <div class="menu-primary-menu-container"><ul id="primary-menu" class="sf-menu"><li id="menu-item-1385" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1385"><a href="https://www.happythemes.com/demo/goodpress/about/">About</a></li>
+                        <li id="menu-item-1386" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1386"><a href="https://www.happythemes.com/demo/goodpress/contact/">Contact</a></li>
+                        <li id="menu-item-1311" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1311"><a href="#">Dropdown</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-1312" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1312"><a href="#">Sub Menu 1</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-1315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1315"><a href="#">Sub Menu 1.1</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-1318" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1318"><a href="#">Sub Menu 1.1.1</a></li>
+                                                <li id="menu-item-1319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1319"><a href="#">Sub Menu 1.1.2</a></li>
+                                                <li id="menu-item-1320" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1320"><a href="#">Sub Menu 1.1.3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-1316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1316"><a href="#">Sub Menu 1.2</a></li>
+                                        <li id="menu-item-1317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1317"><a href="#">Sub Menu 1.3</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-1313" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1313"><a href="#">Sub Menu 2</a></li>
+                                <li id="menu-item-1314" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1314"><a href="#">Sub Menu 3</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-1226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1226"><a href="https://www.happythemes.com/demo/goodpress/elements/">Elements</a></li>
+                        <li id="menu-item-1203" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1203"><a href="https://www.happythemes.com/wordpress-themes/goodpress/">Download Theme »</a></li>
+                    </ul></div>
+                </nav><!-- #primary-nav -->
+
+
+                <div class="header-search">
+                    <form id="searchform" method="get" action="https://www.happythemes.com/demo/goodpress/">
+                        <input type="search" name="s" class="search-input" placeholder="Search..." autocomplete="off">
+                        <button type="submit" class="search-submit"><span class="genericon genericon-search"></span></button>
+                    </form>
+                </div><!-- .header-search -->
+
+
+            </div><!-- .container -->
+
+        </div><!-- #primary-bar -->
+
+        <div class="site-start clear">
+
+            <div class="container">
+
+                <div class="site-branding">
+
+
+                    <div id="logo">
+                        <span class="helper"></span>
+                        <a href="https://www.happythemes.com/demo/goodpress/" rel="home">
+                            <img src="https://www.happythemes.com/demo/goodpress/wp-content/themes/goodpress/assets/img/logo.png" alt=""/>
+                        </a>
+                    </div><!-- #logo -->
+
+
+                </div><!-- .site-branding -->
+
+                <div id="happythemes-ad-2" class="header-ad widget_ad ad-widget"><div class="adwidget"><a href="https://www.happythemes.com" target="_blank"><img src="https://www.happythemes.com/demo/goodpress-pro/wp-content/uploads/sites/39/2017/06/728-1.png" alt="Ad Widget"/></a></div></div>
+                <span class="mobile-menu-icon">
+				<span class="menu-icon-open">Menu</span>
+				<span class="menu-icon-close"><span class="genericon genericon-close"></span></span>
+			</span>
+
+            </div><!-- .container -->
+
+        </div><!-- .site-start -->
+
+        <div id="secondary-bar" class="clear">
+
+            <div class="container">
+
+                <nav id="secondary-nav" class="secondary-navigation">
+
+                    <div class="menu-secondary-menu-container"><ul id="secondary-menu" class="sf-menu"><li id="menu-item-1202" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1202"><a href="https://www.happythemes.com/demo/goodpress"><span class="genericon genericon-home"></span></a></li>
+                        <li id="menu-item-1238" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1238"><a href="https://www.happythemes.com/demo/goodpress/latest-2/">Latest</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-1321" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item current-menu-ancestor menu-item-has-children menu-item-1321"><a href="https://www.happythemes.com/demo/goodpress/category/business/">Sub Category 1</a>
+                                    <ul class="sub-menu">
+                                        <li id="menu-item-1324" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1324"><a href="https://www.happythemes.com/demo/goodpress/category/social/">Sub Category 1.1</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-1327" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-1327"><a href="https://www.happythemes.com/demo/goodpress/category/business/">Sub Category 1.1.1</a></li>
+                                                <li id="menu-item-1308" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1308"><a href="https://www.happythemes.com/demo/goodpress/category/technology/">Sub Category 1.1.2</a></li>
+                                                <li id="menu-item-1328" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1328"><a href="https://www.happythemes.com/demo/goodpress/category/fashion/">Sub Category 1.1.3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-1325" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1325"><a href="https://www.happythemes.com/demo/goodpress/category/sports/">Sub Category 1.2</a></li>
+                                        <li id="menu-item-1326" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1326"><a href="https://www.happythemes.com/demo/goodpress/category/technology/">Sub Category 1.3</a></li>
+                                    </ul>
+                                </li>
+                                <li id="menu-item-1322" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1322"><a href="https://www.happythemes.com/demo/goodpress/category/entertainment/">Sub Category 2</a></li>
+                                <li id="menu-item-1323" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1323"><a href="https://www.happythemes.com/demo/goodpress/category/fashion/">Sub Category 3</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-1376" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-1376"><a href="https://www.happythemes.com/demo/goodpress/category/business/">Business</a></li>
+                        <li id="menu-item-1377" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1377"><a href="https://www.happythemes.com/demo/goodpress/category/entertainment/">Entertainment</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-1341" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1341"><a href="https://www.happythemes.com/demo/goodpress/category/entertainment/">Sub Menu 1</a></li>
+                                <li id="menu-item-1342" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1342"><a href="https://www.happythemes.com/demo/goodpress/category/entertainment/">Sub Menu 2</a></li>
+                                <li id="menu-item-1343" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1343"><a href="https://www.happythemes.com/demo/goodpress/category/entertainment/">Sub Menu 3</a></li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-1378" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1378"><a href="https://www.happythemes.com/demo/goodpress/category/fashion/">Fashion</a></li>
+                        <li id="menu-item-1380" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1380"><a href="https://www.happythemes.com/demo/goodpress/category/health/">Health</a></li>
+                        <li id="menu-item-1304" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1304"><a href="https://www.happythemes.com/demo/goodpress/category/social/">Social</a></li>
+                        <li id="menu-item-1382" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1382"><a href="https://www.happythemes.com/demo/goodpress/category/sports/">Sports</a></li>
+                        <li id="menu-item-1337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1337"><a href="#">More</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-1379" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1379"><a href="https://www.happythemes.com/demo/goodpress/category/food/">Food</a></li>
+                                <li id="menu-item-1381" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1381"><a href="https://www.happythemes.com/demo/goodpress/category/lifestyle/">Lifestyle</a></li>
+                                <li id="menu-item-1383" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1383"><a href="https://www.happythemes.com/demo/goodpress/category/technology/">Technology</a></li>
+                                <li id="menu-item-1384" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1384"><a href="https://www.happythemes.com/demo/goodpress/category/travel/">Travel</a></li>
+                            </ul>
+                        </li>
+                    </ul></div>
+                </nav><!-- #secondary-nav -->
+
+            </div><!-- .container -->
+
+        </div><!-- .secondary-bar -->
+
+        <div class="mobile-menu clear">
+
+            <div class="container">
+
+                <div class="menu-left"><h3>Pages</h3><div class="menu-primary-menu-container"><ul id="primary-mobile-menu" class=""><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1385"><a href="https://www.happythemes.com/demo/goodpress/about/">About</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1386"><a href="https://www.happythemes.com/demo/goodpress/contact/">Contact</a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1311"><a href="#">Dropdown</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1226"><a href="https://www.happythemes.com/demo/goodpress/elements/">Elements</a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1203"><a href="https://www.happythemes.com/wordpress-themes/goodpress/">Download Theme »</a></li>
+                </ul></div></div><div class="menu-right"><h3>Categories</h3><div class="menu-secondary-menu-container"><ul id="secondary-mobile-menu" class=""><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1202"><a href="https://www.happythemes.com/demo/goodpress"><span class="genericon genericon-home"></span></a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1238"><a href="https://www.happythemes.com/demo/goodpress/latest-2/">Latest</a></li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-1376"><a href="https://www.happythemes.com/demo/goodpress/category/business/">Business</a></li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1377"><a href="https://www.happythemes.com/demo/goodpress/category/entertainment/">Entertainment</a></li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1378"><a href="https://www.happythemes.com/demo/goodpress/category/fashion/">Fashion</a></li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1380"><a href="https://www.happythemes.com/demo/goodpress/category/health/">Health</a></li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1304"><a href="https://www.happythemes.com/demo/goodpress/category/social/">Social</a></li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1382"><a href="https://www.happythemes.com/demo/goodpress/category/sports/">Sports</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1337"><a href="#">More</a></li>
+            </ul></div></div>
+            </div><!-- .container -->
+
+        </div><!-- .mobile-menu -->
+
+
+        <span class="search-icon">
+				<span class="genericon genericon-search"></span>
+				<span class="genericon genericon-close"></span>
+			</span>
+
+
+
+    </header><!-- #masthead -->
+
+    <div id="content" class="site-content container">
+        <div class="clear">
+
+            <div id="primary" class="content-area clear">
+
+                <main id="main" class="site-main clear">
+
+                    <div class="breadcrumbs clear">
+                        <h3>
+                            Business			</h3>
+                        <div class="taxonomy-description"><p>You can enter a simple description of this category here</p>
+                        </div>		</div><!-- .breadcrumbs -->
+
+                    <div id="recent-content" class="content-loop">
+
+
+                        <div id="post-64" class="clear post-64 post type-post status-publish format-standard has-post-thumbnail hentry category-business">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/just-a-sneak-peak-of-my-awesome-workspace/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/21-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/21-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/21-768x512.jpg 768w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/21-1024x683.jpg 1024w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/21-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/21-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/21-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/21-120x80.jpg 120w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/just-a-sneak-peak-of-my-awesome-workspace/">Just a Sneak Peak of My Awesome Workspace</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 27, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/just-a-sneak-peak-of-my-awesome-workspace/#comments" class="comments-link" >1 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/just-a-sneak-peak-of-my-awesome-workspace/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-64 -->
+
+                        <div id="post-1349" class="clear post-1349 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-sports">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/speed-o-meter-in-a-car-through-window/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/11-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/11-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/11-768x512.jpg 768w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/11-1024x683.jpg 1024w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/11-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/11-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/11-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/11-120x80.jpg 120w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/speed-o-meter-in-a-car-through-window/">Speed-O-Meter in a Car Through Window</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 27, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/speed-o-meter-in-a-car-through-window/#respond" class="comments-link" >0 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/speed-o-meter-in-a-car-through-window/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-1349 -->
+
+                        <div id="post-19" class="clear post-19 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-travel">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/pure-nature-above-green-forest-on-the-hill/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/6-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/6-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/6-768x512.jpg 768w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/6-1024x683.jpg 1024w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/6-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/6-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/6-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/6-120x80.jpg 120w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/pure-nature-above-green-forest-on-the-hill/">Pure Nature: Above Green Forest on the Hill</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 27, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/pure-nature-above-green-forest-on-the-hill/#respond" class="comments-link" >0 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/pure-nature-above-green-forest-on-the-hill/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-19 -->
+
+                        <div id="post-16" class="clear post-16 post type-post status-publish format-standard has-post-thumbnail hentry category-business">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/laptop-on-wooden-desk-in-office-open-space/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/5-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/5-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/5-768x512.jpg 768w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/5-1024x683.jpg 1024w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/5-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/5-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/5-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/5-120x80.jpg 120w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/laptop-on-wooden-desk-in-office-open-space/">Laptop on Wooden Desk in Office Open Space</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 27, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/laptop-on-wooden-desk-in-office-open-space/#respond" class="comments-link" >0 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/laptop-on-wooden-desk-in-office-open-space/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-16 -->
+
+                        <div id="post-13" class="clear post-13 post type-post status-publish format-standard has-post-thumbnail hentry category-business">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/man-talking-about-architecture-ideas/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/4-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/4-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/4-768x512.jpg 768w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/4-1024x683.jpg 1024w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/4-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/4-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/4-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/4-120x80.jpg 120w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/man-talking-about-architecture-ideas/">Man Talking About Architecture Ideas</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 27, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/man-talking-about-architecture-ideas/#respond" class="comments-link" >0 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/man-talking-about-architecture-ideas/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-13 -->
+
+                        <div id="post-10" class="clear post-10 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-fashion category-technology">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/amazing-sun-through-snowy-forest/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/3-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/3-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/3-768x512.jpg 768w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/3-1024x683.jpg 1024w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/3-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/3-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/3-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/3-120x80.jpg 120w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/amazing-sun-through-snowy-forest/">Photo of Amazing Sun Through Snowy Forest</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 27, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/amazing-sun-through-snowy-forest/#respond" class="comments-link" >0 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/amazing-sun-through-snowy-forest/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-10 -->
+
+                        <div id="post-653" class="clear post-653 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-fashion category-lifestyle category-sports tag-woman tag-young">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/young-blonde-woman-looking-around-on-terrace/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/2-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/2-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/2-768x513.jpg 768w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/2-1024x684.jpg 1024w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/2-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/2-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/2-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/2-120x80.jpg 120w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/2.jpg 1570w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/young-blonde-woman-looking-around-on-terrace/">Young Blonde Woman Looking Around on Terrace</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 26, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/young-blonde-woman-looking-around-on-terrace/#respond" class="comments-link" >0 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/young-blonde-woman-looking-around-on-terrace/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-653 -->
+
+                        <div id="post-335" class="clear post-335 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-entertainment category-health category-technology">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/reasons-you-should-work-out-during-your-lunch-break/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/07/health10-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/07/health10-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/07/health10-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/07/health10-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/07/health10-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/07/health10-120x80.jpg 120w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/reasons-you-should-work-out-during-your-lunch-break/">Reasons you should work out during your lunch break</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 26, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/reasons-you-should-work-out-during-your-lunch-break/#respond" class="comments-link" >0 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/reasons-you-should-work-out-during-your-lunch-break/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-335 -->
+
+                        <div id="post-92" class="clear post-92 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-fashion category-sports category-technology tag-tag-one tag-tag-two">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/happy-shoes-shoelace-heart/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/30-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/30-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/30-768x513.jpg 768w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/30-1024x684.jpg 1024w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/30-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/30-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/30-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/30-120x80.jpg 120w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/30.jpg 1570w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/happy-shoes-shoelace-heart/">Happy Shoes Shoelace Heart</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 7, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/happy-shoes-shoelace-heart/#respond" class="comments-link" >0 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/happy-shoes-shoelace-heart/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-92 -->
+
+                        <div id="post-61" class="clear last post-61 post type-post status-publish format-standard has-post-thumbnail hentry category-business category-fashion category-news category-social category-sports category-technology tag-tag-one tag-tag-two">
+
+                            <a class="thumbnail-link" href="https://www.happythemes.com/demo/goodpress/red-rose-with-drops-close-up/">
+                                <div class="thumbnail-wrap">
+                                    <img width="300" height="200" src="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/20-300x200.jpg" class="attachment-post_thumb size-post_thumb wp-post-image" alt="" srcset="https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/20-300x200.jpg 300w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/20-768x512.jpg 768w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/20-1024x683.jpg 1024w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/20-660x440.jpg 660w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/20-389x260.jpg 389w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/20-246x164.jpg 246w, https://www.happythemes.com/demo/goodpress/wp-content/uploads/sites/40/2017/06/20-120x80.jpg 120w" sizes="(max-width: 300px) 100vw, 300px" />			</div><!-- .thumbnail-wrap -->
+                            </a>
+
+
+                            <div class="entry-header">
+
+
+                                <h2 class="entry-title"><a href="https://www.happythemes.com/demo/goodpress/red-rose-with-drops-close-up/">Red Rose with Drops Close Up</a></h2>
+
+                                <div class="entry-meta clear">
+
+                                    <span class="entry-author"><a href="https://www.happythemes.com/demo/goodpress/author/allen/" title="Posts by Allen" rel="author">Allen</a> &#8212; </span>
+                                    <span class="entry-date">June 1, 2017</span>
+                                    <span class='entry-comment'><a href="https://www.happythemes.com/demo/goodpress/red-rose-with-drops-close-up/#respond" class="comments-link" >0 comment</a></span>
+
+                                </div><!-- .entry-meta -->
+
+                            </div><!-- .entry-header -->
+
+                            <div class="entry-summary">
+                                This is an example of a WordPress post, you could edit this to put information about yourself or your site so readers know where you are coming from. You can create as...		<span><a href="https://www.happythemes.com/demo/goodpress/red-rose-with-drops-close-up/">Read more &raquo;</a></span>
+                            </div><!-- .entry-summary -->
+
+                        </div><!-- #post-61 -->
+
+                    </div><!-- #recent-content -->
+
+                </main><!-- .site-main -->
+
+
+                <nav class="navigation pagination" role="navigation">
+                    <h2 class="screen-reader-text">Posts navigation</h2>
+                    <div class="nav-links"><span aria-current='page' class='page-numbers current'>1</span>
+                        <a class='page-numbers' href='https://www.happythemes.com/demo/goodpress/category/business/page/2/'>2</a>
+                        <a class="next page-numbers" href="https://www.happythemes.com/demo/goodpress/category/business/page/2/">Next &raquo;</a></div>
+                </nav>
+            </div><!-- #primary -->
+
+
+            <aside id="secondary" class="widget-area sidebar">
+
+
+                <div id="happythemes-ad-3" class="widget widget_ad ad-widget"><div class="adwidget"><a href="https://www.happythemes.com" target="_blank"><img src="https://www.happythemes.com/demo/goodpress-pro/wp-content/uploads/sites/39/2017/06/300-3.png" alt="Ad Widget"/></a></div></div>		<div id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title"><span>Recent Posts</span></h2>		<ul>
+                <li>
+                    <a href="https://www.happythemes.com/demo/goodpress/8-signs-you-struggle-with-nomophobia-on-a-daily-basis/">8 signs you struggle with nomophobia on a daily basis</a>
+                </li>
+                <li>
+                    <a href="https://www.happythemes.com/demo/goodpress/why-walking-is-the-most-underrated-form-of-exercise/">Why walking is the most underrated form of exercise</a>
+                </li>
+                <li>
+                    <a href="https://www.happythemes.com/demo/goodpress/report-25-reasons-the-gym-is-better-than-running/">Report: 25 reasons the gym is better than running</a>
+                </li>
+                <li>
+                    <a href="https://www.happythemes.com/demo/goodpress/studio-photography-backdrops-background-paper-rolls-on-the-wall/">Studio Photography Backdrops Background Paper Rolls on the Wall</a>
+                </li>
+                <li>
+                    <a href="https://www.happythemes.com/demo/goodpress/snorkel-and-diving-scuba-mask-on-a-rock-near-the-sea/">Snorkel and Diving Scuba Mask On a Rock Near The Sea</a>
+                </li>
+            </ul>
+            </div><div id="categories-2" class="widget widget_categories"><h2 class="widget-title"><span>Categories</span></h2>		<ul>
+                <li class="cat-item cat-item-2 current-cat"><a href="https://www.happythemes.com/demo/goodpress/category/business/" title="You can enter a simple description of this category here">Business</a> (15)
+                </li>
+                <li class="cat-item cat-item-3"><a href="https://www.happythemes.com/demo/goodpress/category/entertainment/" title="This is a sample description of this awesome category">Entertainment</a> (8)
+                </li>
+                <li class="cat-item cat-item-4"><a href="https://www.happythemes.com/demo/goodpress/category/fashion/" title="You can enter a simple description of this category here">Fashion</a> (8)
+                </li>
+                <li class="cat-item cat-item-5"><a href="https://www.happythemes.com/demo/goodpress/category/food/" title="You can enter a simple description of this category here">Food</a> (7)
+                </li>
+                <li class="cat-item cat-item-6"><a href="https://www.happythemes.com/demo/goodpress/category/health/" >Health</a> (15)
+                </li>
+                <li class="cat-item cat-item-7"><a href="https://www.happythemes.com/demo/goodpress/category/lifestyle/" title="You can enter a simple description of this category here">Lifestyle</a> (8)
+                </li>
+                <li class="cat-item cat-item-8"><a href="https://www.happythemes.com/demo/goodpress/category/news/" >News</a> (15)
+                </li>
+                <li class="cat-item cat-item-9"><a href="https://www.happythemes.com/demo/goodpress/category/social/" title="This is a sample description of this awesome category">Social</a> (8)
+                </li>
+                <li class="cat-item cat-item-10"><a href="https://www.happythemes.com/demo/goodpress/category/sports/" title="Includes all forms of competitive physical activity or games.">Sports</a> (16)
+                </li>
+                <li class="cat-item cat-item-11"><a href="https://www.happythemes.com/demo/goodpress/category/technology/" title="You can enter a simple description of this category here">Technology</a> (10)
+                </li>
+                <li class="cat-item cat-item-12"><a href="https://www.happythemes.com/demo/goodpress/category/travel/" title="You can enter a simple description of this category here">Travel</a> (8)
+                </li>
+            </ul>
+            </div><div id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title"><span>Recent Comments</span></h2><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Allen</span> on <a href="https://www.happythemes.com/demo/goodpress/featured-post-colorful-carousel-swing-ride/#comment-4">Featured post: Colorful carousel swing ride</a></li><li class="recentcomments"><span class="comment-author-link">Allen</span> on <a href="https://www.happythemes.com/demo/goodpress/featured-post-black-airplane-in-the-sky/#comment-5">Featured post: Black airplane in the sky</a></li><li class="recentcomments"><span class="comment-author-link">Allen</span> on <a href="https://www.happythemes.com/demo/goodpress/featured-post-an-office-lady-in-white-blazer-holding-tablet-computer/#comment-7">Featured: An Office Lady In White Blazer Holding Tablet Computer</a></li><li class="recentcomments"><span class="comment-author-link">Allen</span> on <a href="https://www.happythemes.com/demo/goodpress/featured-post-an-office-lady-in-white-blazer-holding-tablet-computer/#comment-6">Featured: An Office Lady In White Blazer Holding Tablet Computer</a></li><li class="recentcomments"><span class="comment-author-link">Allen</span> on <a href="https://www.happythemes.com/demo/goodpress/8-signs-you-struggle-with-nomophobia-on-a-daily-basis/#comment-20">8 signs you struggle with nomophobia on a daily basis</a></li></ul></div><div id="archives-2" class="widget widget_archive"><h2 class="widget-title"><span>Archives</span></h2>		<label class="screen-reader-text" for="archives-dropdown-2">Archives</label>
+                <select id="archives-dropdown-2" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+
+                    <option value="">Select Month</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2018/03/'> March 2018 &nbsp;(3)</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2017/08/'> August 2017 &nbsp;(10)</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2017/07/'> July 2017 &nbsp;(16)</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2017/06/'> June 2017 &nbsp;(27)</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2017/04/'> April 2017 &nbsp;(1)</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2017/01/'> January 2017 &nbsp;(3)</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2016/06/'> June 2016 &nbsp;(1)</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2015/07/'> July 2015 &nbsp;(1)</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2015/06/'> June 2015 &nbsp;(1)</option>
+                    <option value='https://www.happythemes.com/demo/goodpress/2010/03/'> March 2010 &nbsp;(1)</option>
+
+                </select>
+            </div><div id="happythemes-ad-4" class="widget widget_ad ad-widget"><h2 class="widget-title"><span>Advertisement</span></h2><div class="adwidget"><a href="https://www.happythemes.com" target="_blank"><img src="https://www.happythemes.com/demo/goodpress-pro/wp-content/uploads/sites/39/2017/06/300-2.png" alt="Ad Widget"/></a></div></div><div id="tag_cloud-1" class="widget widget_tag_cloud"><h2 class="widget-title"><span>Tags</span></h2><div class="tagcloud"><a href="https://www.happythemes.com/demo/goodpress/tag/girl/" class="tag-cloud-link tag-link-13 tag-link-position-1" style="font-size: 12.5818181818pt;" aria-label="girl (2 items)">girl</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/landscape/" class="tag-cloud-link tag-link-14 tag-link-position-2" style="font-size: 15.6363636364pt;" aria-label="landscape (3 items)">landscape</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/man/" class="tag-cloud-link tag-link-15 tag-link-position-3" style="font-size: 8pt;" aria-label="man (1 item)">man</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/people/" class="tag-cloud-link tag-link-16 tag-link-position-4" style="font-size: 15.6363636364pt;" aria-label="people (3 items)">people</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/photo/" class="tag-cloud-link tag-link-17 tag-link-position-5" style="font-size: 8pt;" aria-label="photo (1 item)">photo</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/tag-one/" class="tag-cloud-link tag-link-18 tag-link-position-6" style="font-size: 22pt;" aria-label="tag one (6 items)">tag one</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/tag-two/" class="tag-cloud-link tag-link-19 tag-link-position-7" style="font-size: 20.2181818182pt;" aria-label="tag two (5 items)">tag two</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/test-tag/" class="tag-cloud-link tag-link-20 tag-link-position-8" style="font-size: 18.1818181818pt;" aria-label="test tag (4 items)">test tag</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/woman/" class="tag-cloud-link tag-link-21 tag-link-position-9" style="font-size: 18.1818181818pt;" aria-label="woman (4 items)">woman</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/workspace/" class="tag-cloud-link tag-link-23 tag-link-position-10" style="font-size: 8pt;" aria-label="workspace (1 item)">workspace</a>
+                <a href="https://www.happythemes.com/demo/goodpress/tag/young/" class="tag-cloud-link tag-link-24 tag-link-position-11" style="font-size: 22pt;" aria-label="young (6 items)">young</a></div>
+            </div>
+
+            </aside><!-- #secondary -->
+
+        </div><!-- .clear -->
+
+    </div><!-- #content .site-content -->
+
+
+    <footer id="colophon" class="site-footer container">
+
+
+        <div class="footer-columns clear">
+
+            <div class="footer-column footer-column-1">
+                <div id="recent-posts-3" class="widget footer-widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+                    <li>
+                        <a href="https://www.happythemes.com/demo/goodpress/8-signs-you-struggle-with-nomophobia-on-a-daily-basis/">8 signs you struggle with nomophobia on a daily basis</a>
+                    </li>
+                    <li>
+                        <a href="https://www.happythemes.com/demo/goodpress/why-walking-is-the-most-underrated-form-of-exercise/">Why walking is the most underrated form of exercise</a>
+                    </li>
+                    <li>
+                        <a href="https://www.happythemes.com/demo/goodpress/report-25-reasons-the-gym-is-better-than-running/">Report: 25 reasons the gym is better than running</a>
+                    </li>
+                    <li>
+                        <a href="https://www.happythemes.com/demo/goodpress/studio-photography-backdrops-background-paper-rolls-on-the-wall/">Studio Photography Backdrops Background Paper Rolls on the Wall</a>
+                    </li>
+                </ul>
+                </div>					</div>
+
+            <div class="footer-column footer-column-2">
+                <div id="recent-comments-3" class="widget footer-widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">Allen</span> on <a href="https://www.happythemes.com/demo/goodpress/featured-post-colorful-carousel-swing-ride/#comment-4">Featured post: Colorful carousel swing ride</a></li><li class="recentcomments"><span class="comment-author-link">Allen</span> on <a href="https://www.happythemes.com/demo/goodpress/featured-post-black-airplane-in-the-sky/#comment-5">Featured post: Black airplane in the sky</a></li><li class="recentcomments"><span class="comment-author-link">Allen</span> on <a href="https://www.happythemes.com/demo/goodpress/featured-post-an-office-lady-in-white-blazer-holding-tablet-computer/#comment-7">Featured: An Office Lady In White Blazer Holding Tablet Computer</a></li><li class="recentcomments"><span class="comment-author-link">Allen</span> on <a href="https://www.happythemes.com/demo/goodpress/featured-post-an-office-lady-in-white-blazer-holding-tablet-computer/#comment-6">Featured: An Office Lady In White Blazer Holding Tablet Computer</a></li></ul></div>					</div>
+
+            <div class="footer-column footer-column-3">
+                <div id="tag_cloud-2" class="widget footer-widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href="https://www.happythemes.com/demo/goodpress/tag/girl/" class="tag-cloud-link tag-link-13 tag-link-position-1" style="font-size: 12.5818181818pt;" aria-label="girl (2 items)">girl</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/landscape/" class="tag-cloud-link tag-link-14 tag-link-position-2" style="font-size: 15.6363636364pt;" aria-label="landscape (3 items)">landscape</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/man/" class="tag-cloud-link tag-link-15 tag-link-position-3" style="font-size: 8pt;" aria-label="man (1 item)">man</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/people/" class="tag-cloud-link tag-link-16 tag-link-position-4" style="font-size: 15.6363636364pt;" aria-label="people (3 items)">people</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/photo/" class="tag-cloud-link tag-link-17 tag-link-position-5" style="font-size: 8pt;" aria-label="photo (1 item)">photo</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/tag-one/" class="tag-cloud-link tag-link-18 tag-link-position-6" style="font-size: 22pt;" aria-label="tag one (6 items)">tag one</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/tag-two/" class="tag-cloud-link tag-link-19 tag-link-position-7" style="font-size: 20.2181818182pt;" aria-label="tag two (5 items)">tag two</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/test-tag/" class="tag-cloud-link tag-link-20 tag-link-position-8" style="font-size: 18.1818181818pt;" aria-label="test tag (4 items)">test tag</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/woman/" class="tag-cloud-link tag-link-21 tag-link-position-9" style="font-size: 18.1818181818pt;" aria-label="woman (4 items)">woman</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/workspace/" class="tag-cloud-link tag-link-23 tag-link-position-10" style="font-size: 8pt;" aria-label="workspace (1 item)">workspace</a>
+                    <a href="https://www.happythemes.com/demo/goodpress/tag/young/" class="tag-cloud-link tag-link-24 tag-link-position-11" style="font-size: 22pt;" aria-label="young (6 items)">young</a></div>
+                </div>					</div>
+
+        </div><!-- .footer-columns -->
+
+
+        <div class="clear"></div>
+
+        <div id="site-bottom" class="clear">
+
+            <div class="site-info">
+
+
+                &copy; 2018 <a href="https://www.happythemes.com/demo/goodpress">GoodPress</a> - Theme by <a href="https://www.happythemes.com/" target="_blank">HappyThemes</a>
+
+            </div><!-- .site-info -->
+
+            <div class="menu-primary-menu-container"><ul id="footer-menu" class="footer-nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1385"><a href="https://www.happythemes.com/demo/goodpress/about/">About</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1386"><a href="https://www.happythemes.com/demo/goodpress/contact/">Contact</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1311"><a href="#">Dropdown</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1312"><a href="#">Sub Menu 1</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1315"><a href="#">Sub Menu 1.1</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1318"><a href="#">Sub Menu 1.1.1</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1319"><a href="#">Sub Menu 1.1.2</a></li>
+                                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1320"><a href="#">Sub Menu 1.1.3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1316"><a href="#">Sub Menu 1.2</a></li>
+                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1317"><a href="#">Sub Menu 1.3</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1313"><a href="#">Sub Menu 2</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1314"><a href="#">Sub Menu 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1226"><a href="https://www.happythemes.com/demo/goodpress/elements/">Elements</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1203"><a href="https://www.happythemes.com/wordpress-themes/goodpress/">Download Theme »</a></li>
+            </ul></div>
+
+        </div><!-- #site-bottom -->
+
+    </footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+
+<script type='text/javascript' src='js/scripts.js'></script>
+<script type='text/javascript' src='js/superfish.js'></script>
+<script type='text/javascript' src='js/modernizr.min.js'></script>
+<script type='text/javascript' src='js/html5.js'></script>
+<script type='text/javascript' src='js/jquery.bxslider.min.js'></script>
+<script type='text/javascript' src='js/jquery.custom.js'></script>
+<script type='text/javascript' src='js/wp-embed.min.js'></script>
+
+</body>
+</html>
